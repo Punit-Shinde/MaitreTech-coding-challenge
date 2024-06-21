@@ -14,11 +14,19 @@ const Navbar = () => {
           <img src={logo} alt="logo" className="text-white" />
           <h1 className="text-xl font-semibold">Food's Resturant</h1>
         </div>
-        <div>
+        <div className="relative w-8 h-5">
           {window.location.pathname === "/menu" && (
-            <FaShoppingCart
-              className="text-black justify-end text-xl"
-            />
+            <>
+              <FaShoppingCart
+                className="text-black justify-end text-xl cursor-pointer"
+                onClick={() => {
+                  navigate("./ordersummary");
+                }}
+              />
+              <div className="count absolute top-0 right-0 w-10px h-10px px-1 bg-white rounded-full text-black text-[10px] font-semibold select-none">
+                1
+              </div>
+            </>
           )}
         </div>
       </nav>

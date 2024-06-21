@@ -5,7 +5,7 @@ const OrderSummary = () => {
   const navigate = useNavigate();
   return (
     <>
-      <div className="absolute w-[35%] h-48 top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] w-76 p-5 shadow-md rounded-md border-2 ">
+      <div className="absolute w-[35%] h-48 top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] w-76 p-5 shadow-md rounded-md border-2 bg-white">
         <h1 className="font-bold">Order Summary</h1>
         <div className="flex justify-between gap-5 mt-5">
           <p>Coke : </p>
